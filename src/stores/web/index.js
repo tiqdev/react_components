@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    activeTab: "home"
+    activeTab: "home",
+    theme: "light"
 }
 
 const web = createSlice({
@@ -10,12 +11,16 @@ const web = createSlice({
     reducers: {
         _setActiveTab: (state, action) => {
             state.activeTab = action.payload
+        },
+        _setTheme: (state, action) => {
+            state.theme = action.payload
         }
     }
 })
 
 export const {
-    _setActiveTab
+    _setActiveTab,
+    _setTheme
 } = web.actions;
 
 export default web.reducer

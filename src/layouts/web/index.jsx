@@ -5,7 +5,7 @@ const WebLayout = () => {
   return (
     <>
       <Sidebar />
-      <main className="md:ml-[250px] ml-[80px] p-4">
+      <main className="md:ml-[250px] ml-[80px] p-4 text-woodsmoke-300">
         <Outlet />
       </main>
     </>

@@ -10,8 +10,8 @@ const MenuItem = ({ item }) => {
         classNames(
           "h-9 transition-colors flex items-center justify-start gap-2 rounded text-15 font-medium",
           {
-            "text-black-800": !isActive,
-            "text-red-800": isActive,
+            "text-woodsmoke-700": !isActive,
+            "text-woodsmoke-300": isActive,
           }
         )
       }
