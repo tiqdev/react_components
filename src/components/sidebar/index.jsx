@@ -1,5 +1,5 @@
 import { SIDEBAR_MENU } from "~/utils/constants/menu";
-import MenuItem from "./components/menu_item";
+import MenuItem from "./components/MenuItem";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {

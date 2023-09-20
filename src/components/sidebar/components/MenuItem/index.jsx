@@ -16,7 +16,7 @@ const MenuItem = ({ item }) => {
         )
       }
     >
-      <di>{item.icon}</di>
+      <div>{item.icon}</div>
       <span>{item.label}</span>
     </NavLink>
   );
