@@ -8,7 +8,7 @@ const MenuItem = ({ item }) => {
       to={item.path}
       className={({ isActive }) =>
         classNames(
-          "h-9 transition-colors flex items-center justify-start gap-2 rounded text-15 font-medium",
+          "h-9 transition-colors flex items-center md:justify-start justify-center gap-2 rounded text-15 font-medium",
           {
             "text-woodsmoke-700": !isActive,
             "text-woodsmoke-300": isActive,
@@ -17,7 +17,7 @@ const MenuItem = ({ item }) => {
       }
     >
       <div>{item.icon}</div>
-      <span>{item.label}</span>
+      <span className="md:block hidden">{item.label}</span>
     </NavLink>
   );
 };
